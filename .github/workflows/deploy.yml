@@ -23,7 +23,8 @@ jobs:
 
       - name: 设置NodeJS
         uses: withastro/action@v5
-  
+        with:
+          node-version: 24
 
   deploy:
     name: 部署到 GitHub Pages
