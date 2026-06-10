@@ -1,1 +1,19 @@
 /* Starlight Theme Galaxy 样式 */
+
+@import '@fontsource/fira-code/400.css';
+@import '@fontsource/fira-code/500.css';
+@import '@fontsource/fira-code/600.css';
+@import '@fontsource/fira-code/700.css';
+
+/* 代码块使用 Fira Code 字体 */
+:root {
+	--__sl-font-mono: 'Fira Code', monospace;
+}
+
+/* 代码块样式 */
+.expressive-code {
+	box-shadow: none !important;
+	border: 1px solid var(--sl-color-gray-5);
+	border-radius: 0.5rem;
+	background-color: var(--sl-color-gray-3);
+}
