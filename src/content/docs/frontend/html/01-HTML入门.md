@@ -7,6 +7,8 @@ description: HTML 基础知识
 
 HTML（HyperText Markup Language）是用于创建网页的标准标记语言。
 
+![wallhaven-x6p3y3](./assets/wallhaven-x6p3y3.webp)
+
 ## 基本结构
 
 ```html
