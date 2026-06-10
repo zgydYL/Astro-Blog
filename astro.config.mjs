@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightThemeGalaxy from 'starlight-theme-galaxy';
+import { sidebar } from './src/config/sidebar';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,10 +10,10 @@ export default defineConfig({
 	base: '/Astro-Blog/',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: '我的知识库',
+			plugins: [starlightThemeGalaxy()],
 			customCss: [
-				'./src/styles/custom.css',
+				'./src/styles/global.css',
 			],
 			// 网站默认语言
 			locales: {
@@ -25,22 +27,7 @@ export default defineConfig({
 				minHeadingLevel: 1,
 				maxHeadingLevel: 6
 			},
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
-				},
-				{
-					label: 'Python',
-					items: [{ autogenerate: { directory: 'python' } }],
-				},
-			],
+			sidebar,
 		}),
 	],
 });

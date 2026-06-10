@@ -1,39 +1,78 @@
 ---
-title: 欢迎来到我的知识库
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: 我的知识库
+description: 全栈开发者的学习笔记与知识沉淀
+template: splash
 hero:
-  tagline: 尽情阅览！
-  image:
-    file: ../../assets/houston.webp
+  tagline: 全栈开发者的学习笔记与知识沉淀，涵盖前端、后端、中间件及项目实战
   actions:
-    - text: 示例
-      link: /Astro-Blog/guides/example/
-      icon: right-arrow
-    - text: 查阅 Starlight 文档
-      link: https://starlight.astro.build
-      icon: external
+    - text: 开始阅读
+      link: /Astro-Blog/frontend/html/01-html入门/
+      variant: primary
+    - text: GitHub
+      link: https://github.com/zgydYL
       variant: secondary
 ---
 
-import { Card, CardGrid, } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## 知识库
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+## 技术栈
+
+<CardGrid>
+  <Card title="前端开发" icon="pencil">
+    HTML、CSS、JavaScript、Vue、React
+  </Card>
+  <Card title="后端开发" icon="document">
+    Java、Python、Go、Spring、FastAPI、Gin
+  </Card>
+  <Card title="数据存储" icon="setting">
+    MySQL、Redis、ElasticSearch
+  </Card>
+  <Card title="项目实战" icon="open-book">
+    全栈项目架构与开发经验
+  </Card>
+</CardGrid>
+
+## 前端技术
+
+<CardGrid>
+  <LinkCard title="HTML" href="/Astro-Blog/frontend/html/01-html入门/" description="网页结构基础" />
+  <LinkCard title="CSS" href="/Astro-Blog/frontend/css/01-css入门/" description="样式与布局" />
+  <LinkCard title="JavaScript" href="/Astro-Blog/frontend/javascript/01-javascript入门/" description="交互与逻辑" />
+  <LinkCard title="Vue" href="/Astro-Blog/frontend/vue/01-vue入门/" description="渐进式框架" />
+  <LinkCard title="React" href="/Astro-Blog/frontend/react/01-react入门/" description="用户界面库" />
+</CardGrid>
+
+## Java 生态
+
+<CardGrid>
+  <LinkCard title="Java 基础" href="/Astro-Blog/backend/java/java基础/01-java基础入门/" description="面向对象、集合框架" />
+  <LinkCard title="JavaWeb" href="/Astro-Blog/backend/java/javaweb/01-javaweb入门/" description="Servlet、JSP" />
+  <LinkCard title="Spring" href="/Astro-Blog/backend/java/spring/01-spring入门/" description="IoC、AOP" />
+  <LinkCard title="MyBatis" href="/Astro-Blog/backend/java/mybatis/01-mybatis入门/" description="ORM 框架" />
+  <LinkCard title="Spring Boot" href="/Astro-Blog/backend/java/springboot/01-springboot入门/" description="快速开发" />
+</CardGrid>
+
+## Python 生态
+
+<CardGrid>
+  <LinkCard title="Python 基础" href="/Astro-Blog/backend/python/python基础/01-python基础入门/" description="语法、数据结构" />
+  <LinkCard title="FastAPI" href="/Astro-Blog/backend/python/fastapi/01-fastapi入门/" description="高性能 API" />
+  <LinkCard title="Django" href="/Astro-Blog/backend/python/django/01-Django入门/" description="全功能框架" />
+  <LinkCard title="Flask" href="/Astro-Blog/backend/python/flask/01-Flask入门/" description="轻量级框架" />
+</CardGrid>
+
+## Go 生态
+
+<CardGrid>
+  <LinkCard title="Go 基础" href="/Astro-Blog/backend/go/go基础/01-go基础入门/" description="并发编程" />
+  <LinkCard title="Gin" href="/Astro-Blog/backend/go/gin/01-gin入门/" description="Web 框架" />
+  <LinkCard title="GORM" href="/Astro-Blog/backend/go/gorm/01-GORM入门/" description="ORM 框架" />
+</CardGrid>
+
+## 中间件
+
+<CardGrid>
+  <LinkCard title="MySQL" href="/Astro-Blog/middleware/mysql/01-mysql入门/" description="关系型数据库" />
+  <LinkCard title="Redis" href="/Astro-Blog/middleware/redis/01-redis入门/" description="内存数据库" />
+  <LinkCard title="ElasticSearch" href="/Astro-Blog/middleware/elasticsearch/01-elasticsearch入门/" description="搜索引擎" />
 </CardGrid>
