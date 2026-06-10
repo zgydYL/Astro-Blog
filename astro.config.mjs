@@ -20,6 +20,7 @@ export default defineConfig({
 					lang: 'zh-CN',
 				},
 			},
+			// 右侧目录显示层级
 			tableOfContents: {
 				minHeadingLevel: 1,
 				maxHeadingLevel: 6
