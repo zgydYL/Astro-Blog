@@ -26,7 +26,6 @@ export default defineConfig({
 				maxHeadingLevel: 6
 			},
 			sidebar: [
-				"guides/example",
 				{
 					label: 'Guides',
 					items: [
