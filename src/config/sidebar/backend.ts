@@ -17,6 +17,7 @@ const python: SidebarItem = {
 	collapsed: true,
 	items: [
 		autoItem('Python基础', 'backend/python/python基础'),
+		autoItem('Python标准库', 'backend/python/python标准库'),
 		autoItem('FastAPI', 'backend/python/fastapi'),
 		autoItem('Django', 'backend/python/django'),
 		autoItem('Flask', 'backend/python/flask'),

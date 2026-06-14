@@ -18,6 +18,8 @@
 :root {
 	--sl-font: 'LXGW WenKai', sans-serif;
 	--__sl-font-mono: 'Fira Code', monospace;
+	--sl-content-width: 55rem;
+	--sl-text-5xl: 3.5rem;
 }
 
 /* 代码块样式 */
@@ -26,4 +28,8 @@
 	border: 1px solid var(--sl-color-gray-5);
 	border-radius: 0.5rem;
 	background-color: var(--sl-color-gray-7);
+}
+
+.right-sidebar-container{
+	border-left: 0.5px solid #e3e3e3;
 }
